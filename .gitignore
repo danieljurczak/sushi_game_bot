@@ -1,3 +1,4 @@
 full_snap*
 venv
 .vscode
+__pycache__
