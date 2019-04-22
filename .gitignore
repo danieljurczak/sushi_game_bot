@@ -2,3 +2,4 @@ full_snap*
 venv
 .vscode
 __pycache__
+*.png

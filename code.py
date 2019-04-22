@@ -148,7 +148,7 @@ def buyFood(food):
         time.sleep(.05)
         leftClick()
         s = screenGrab()
-        if s.getpixel(Cord.buy_rice) == (225, 181, 105):
+        if s.getpixel(Cord.buy_rice) != (127, 127, 127):
             print('rice is available')
             mousePos(Cord.buy_rice)
             time.sleep(.1)
@@ -361,7 +361,7 @@ def check_bubs():
     checkFood()
     s1 = get_seat_one()
     if s1 != Blank.seat_1:
-        if sushiTypes.has_key(s1):
+        if s1 in sushiTypes:
             print('table 1 is occupied and needs %s' % sushiTypes[s1])
             makeFood(sushiTypes[s1])
         else:
@@ -374,7 +374,7 @@ def check_bubs():
     checkFood()
     s2 = get_seat_two()
     if s2 != Blank.seat_2:
-        if sushiTypes.has_key(s2):
+        if s2 in sushiTypes:
             print('table 2 is occupied and needs %s' % sushiTypes[s2])
             makeFood(sushiTypes[s2])
         else:
@@ -386,7 +386,7 @@ def check_bubs():
     checkFood()
     s3 = get_seat_three()
     if s3 != Blank.seat_3:
-        if sushiTypes.has_key(s3):
+        if s3 in sushiTypes:
             print('table 3 is occupied and needs %s' % sushiTypes[s3])
             makeFood(sushiTypes[s3])
         else:
@@ -398,7 +398,7 @@ def check_bubs():
     checkFood()
     s4 = get_seat_four()
     if s4 != Blank.seat_4:
-        if sushiTypes.has_key(s4):
+        if s4 in sushiTypes:
             print('table 4 is occupied and needs %s' % sushiTypes[s4])
             makeFood(sushiTypes[s4])
         else:
@@ -411,7 +411,7 @@ def check_bubs():
     checkFood()
     s5 = get_seat_five()
     if s5 != Blank.seat_5:
-        if sushiTypes.has_key(s5):
+        if s5 in sushiTypes:
             print('table 5 is occupied and needs %s' % sushiTypes[s5])
             makeFood(sushiTypes[s5])
         else:
@@ -423,7 +423,7 @@ def check_bubs():
     checkFood()
     s6 = get_seat_six()
     if s6 != Blank.seat_6:
-        if sushiTypes.has_key(s6):
+        if s6 in sushiTypes:
             print('table 1 is occupied and needs %s' % sushiTypes[s6])
             makeFood(sushiTypes[s6])
         else:
